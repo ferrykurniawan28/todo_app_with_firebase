@@ -21,7 +21,25 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       theme: ThemeData(
-        brightness: Brightness.dark,
+        textTheme: TextTheme(
+          bodyLarge: GoogleFonts.lemon(
+            textStyle: const TextStyle(
+              color: Colors.white,
+            ),
+          ),
+          bodyMedium: GoogleFonts.lemon(
+            textStyle: const TextStyle(
+              color: Colors.white,
+            ),
+          ),
+          bodySmall: GoogleFonts.lemon(
+            textStyle: const TextStyle(
+              color: Colors.white,
+            ),
+          ),
+        ),
+      ),
+      darkTheme: ThemeData.dark().copyWith(
         textTheme: TextTheme(
           bodyLarge: GoogleFonts.lemon(
             textStyle: const TextStyle(
